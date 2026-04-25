@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;  
+    box-sizing:border-box;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.top {
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bottom {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#bio {
+    text-align: center;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+
+/* Table Designs */
+table {
+    align-items: center;
+}
+
+td {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+    
+#titles {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+button {
+    background-color: rgb(138, 47, 138);
+    color: white;
+    border-radius: 5%;
+}
