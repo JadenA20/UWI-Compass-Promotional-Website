@@ -39,6 +39,34 @@ body {
     font-size: 20px;
 }
 
+.header-navbar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-navbar a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-bottom-color 0.15s ease;
+}
+
+.header-navbar a:hover {
+    color: rgb(8, 105, 65);
+}
+
+.header-navbar a.active {
+    color: rgb(8, 105, 65);
+    border-bottom: 2px solid rgb(8, 105, 65);
+}
+
+
+
 /* Main Layout Styling*/
 .main {
     flex: 1;
@@ -147,3 +175,4 @@ i {
     padding: 20px;
     background-color: white;
 }
+
