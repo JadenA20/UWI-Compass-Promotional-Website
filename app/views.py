@@ -12,12 +12,20 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/about/')
-def about():
-    """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+@app.route('/about-us/')
+def about_us():
+    """Render the website's about us page."""
+    return render_template('about-us.html')
 
+@app.route('/benefits/')
+def benefits():
+    """Render the benefits page."""
+    return render_template('benefits.html')
 
+@app.route('/functionality/')
+def functionality():
+    """Render the functionality page."""
+    return render_template('functionality.html')
 
 
 @app.after_request
