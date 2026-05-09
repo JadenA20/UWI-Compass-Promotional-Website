@@ -3,9 +3,9 @@
     <h2>UWI COMPASS</h2>
 
     <div class="header-navbar">
-        <a href="{{ url_for('home') }}=" class="{% if request.endpoint == 'home' %}active{% endif %}">Home</a>
+        <a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">Home</a>
         <a href="{{ url_for('about_us') }}" class="{% if request.endpoint == 'about_us' %}active{% endif %}">About Us</a>
-        <a href="{{ url_for('benefits')}}" clas="{% if request.endpoint == 'benefits' %}active{% endif %}">Benefits</a>
+        <a href="{{ url_for('benefits')}}" class="{% if request.endpoint == 'benefits' %}active{% endif %}">Benefits</a>
         <a href="{{ url_for('functionality') }}" class="{% if request.endpoint == 'functionality' %}active{% endif %}">Functionality</a>
     </div>
 
