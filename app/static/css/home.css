@@ -9,6 +9,7 @@
 
 .carousel-img {
     height: 350px;
+    width: 100%;
     object-fit: cover;
     /*border-radius: 12px;*/
     filter: brightness(0.75);
@@ -27,16 +28,20 @@
 .carousel-caption p {
     transition: transform 0.25s ease, text-shadow 0.2s;
     font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9),
+                 0 4px 16px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-item:hover .carousel-caption h5 {
     transform: translateY(-5px);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 .carousel-item:hover .carousel-caption p {
     transform: translateY(3px);
     letter-spacing: 0.3px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 
