@@ -1,6 +1,219 @@
 {% extends "base.html" %}
 
-{% block main %}
-<h1>About Us</h1>
-<p>This webpage is about our team.</p>
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about-us.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<!--Intro Section -->
+<div class="about-container">
+    <div class="intro-section scroll-reveal">
+        <h1 class="intro-title">About Us</h1>
+        <p class="intro-subtitle">Meet the team behind UWI Compass</p>
+    </div>
+
+        <!-- Description Section -->
+        <div class="description-section scroll-reveal">
+            <div class="description-card">
+                <p class="description-text">
+                    We are a team of <strong>3rd-Year Computer Science majors</strong>
+                    studying at the <strong>University of the West Indies, Mona</strong>. We
+                    created this system as our Capstone Project for the <strong>
+                    2025-26 Academic Year</strong>.
+               </p>
+
+            </div>
+        </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <h2 class="section-title scroll-reveal">Meet Our Team</h2>
+
+        <div class="team-grid">
+            <!-- Dana Archer -->
+            <div class="team-card scroll-reveal">
+                <div class="flip-card-inner">
+                    <!-- Front side of card-->
+                    <div class="flip-card-front">
+                        <div class="team-image">
+                            <img src="{{ url_for('static', filename='images/dana.jpeg')}}" alt="Dana Archer">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dana Archer</h3>
+                            <p class="team-role">Lead Developer</p>
+                        </div>
+                    </div>
+
+                    <!--Back side of card with role description-->
+                    <div class="flip-card-back">
+                        <h3>Dana Archer</h3>
+                        <h4>Lead Developer</h4>
+                        <ul class="arrow-list">
+                            <li>Served as team leader for the duration of this project.</li>
+                            <li>Played a key role in the following:
+                                <ul class="sub-arrow-list">
+                                    <li>Research</li>
+                                    <li>Backend & Frontend Development</li>
+                                    <li>Testing</li>
+                                    <li>Documentation</li>
+                                    <li>Scheduling and leading team meetings</li>
+                                    <li>Database Generation and Management</li>
+                                    <li>Built the recommendation engine, the main functionality of the system</li>
+                                    <li>Refined the system's User Interface</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Tara-Lee Donald -->
+            <div class="team-card scroll-reveal">
+                <div class="flip-card-inner">
+                    <!-- Front side of card-->
+                    <div class="flip-card-front">
+                        <div class="team-image">
+                            <img src="{{ url_for('static', filename='images/tara.jpeg')}}" alt="Tara-Lee Donald">
+                        </div>
+                        <div class="team-info">
+                            <h3>Tara-Lee Donald</h3>
+                            <p class="team-role">Backend Developer</p>
+                        </div>
+                    </div>
+
+                    <!-- Back side of card -->
+                    <div class="flip-card-back">
+                        <h3>Tara-Lee Donald</h3>
+                        <h4>Backend Developer</h4>
+                        <ul class="arrow-list">
+                            <li>Implemented the reviews and course search functionalities of the system.</li>
+                            <li>Played a key role in the following:
+                                <ul class="sub-arrow-list">
+                                    <li>Research</li>
+                                    <li>Backend Development</li>
+                                    <li>Frontend Development for reviews and course search functionalities</li>
+                                    <li>Testing</li>
+                                    <li>Documentation</li>
+                                </ul>
+                            </li>
+                      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        
+
+            <!-- Jaden Anthony -->
+            <div class="team-card scroll-reveal">
+                <div class="flip-card-inner">
+                    <!-- Front side of card-->
+                    <div class="flip-card-front">
+                        <div class="team-image">
+                            <img src="{{ url_for('static', filename='images/jaden.jpeg') }}" alt="Jaden Anthony">
+                        </div>
+                        <div class="team-info">
+                            <h3>Jaden Anthony</h3>
+                            <p class="team-role">Frontend Developer</p>
+                        </div>
+                    </div>
+
+                    <!--Back side of card-->
+                    <div class="flip-card-back">
+                        <h3>Jaden Anthony</h3>
+                        <h4>Frontend Developer</h4>
+                        <ul class="arrow-list">
+                            <li>Played a key role in the following:
+                                <ul class="sub-arrow-list">
+                                    <li>Research</li>
+                                    <li>Implementation of the system's dashboard</li>
+                                    <li>Building the project's Marketing Website</li>
+                                    <li>Documentation</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khanez Wallace -->
+            <div class="team-card scroll-reveal">
+                <div class="flip-card-inner">
+                    <!-- Front side of card -->
+                    <div class="flip-card-front">
+                        <div class="team-image">
+                            <img src=" {{ url_for('static', filename='images/khanez.jpeg') }}" alt="Khanez Wallace">
+                        </div>
+                        <div class="team-info">
+                            <h3>Khanez Wallace</h3>
+                            <p class="team-role">Frontend Developer</p>
+                        </div>
+                    </div>
+                    <!-- Back side of card -->
+                    <div class="flip-card-back">
+                        <h3>Khanez Wallace</h3>
+                        <h4>Frontend Developer</h4>
+                        <ul class="arrow-list">
+                            <li>Played a key role in the following:
+                                <ul class="sub-arrow-list">
+                                    <li>Research</li>
+                                    <li>Database Creation</li>
+                                    <li>Documentation</li>
+                                    <li>Building the system's Marketing Website</li>
+                                    <li>Implementation of the system's <i>'Acceptance of Terms'</i> functionality</li>
+                                    <li>Assisted in the frontend development of the recommendation section of the system.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- Jada-kay Williams-->
+            <div class="team-card scroll-reveal">
+                <div class="flip-card-inner">
+                    <!-- Front side of card -->
+                    <div class="flip-card-front">
+                        <div class="team-image">
+                            <img src="{{ url_for('static', filename='images/karter.jpeg') }}" alt="Jada-kay Williams">
+                        </div>
+                        <div class="team-info">
+                            <h3>Jada-kay Williams</h3>
+                            <p class="team-role">Frontend Developer</p>
+                        </div>
+                    
+                    </div>
+                    <!-- Back side of card -->
+                    <div class="flip-card-back">
+                        <h3>Jada-kay Williams</h3>
+                        <h4>Backend Developer</h4>
+                        <ul class="arrow-list">
+                            <li>Played a key role in the following:
+                                <ul class="sub-arrow-list">
+                                    <li>Research</li>
+                                    <li>Database Management</li>
+                                    <li>Implementation of the forum feature of the system</li>
+                                    <li>Documentation</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/about-us.js') }}"></script>
 {% endblock %}
