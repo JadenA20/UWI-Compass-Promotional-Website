@@ -75,12 +75,10 @@ filter: invert(45%) sepia(90%) saturate(500%) hue-rotate(105deg);
 
 /* About and Purpose Section Styling */
 
-
-
 .about-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 120px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     animation: fadeSlideUp 0.7s ease forwards; /*adds 'subtle' entrance animation */
 }
 
@@ -98,6 +96,7 @@ filter: invert(45%) sepia(90%) saturate(500%) hue-rotate(105deg);
 
 .home-content {
     padding: 30px 10px 10px 10px;
+    justify-content: center;
 }
 
 .home-title {
