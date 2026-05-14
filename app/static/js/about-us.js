@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check on scroll
     window.addEventListener('scroll', checkReveal);
 
-    // --- Parallax effect on the intro section ---
+    // --- Parallax effect (Depth illusion) on the intro section ---
     window.addEventListener('scroll', function() {
         const introSection = document.querySelector('.intro-section');
         if (introSection) {

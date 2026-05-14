@@ -1,9 +1,124 @@
-{% extends 'base.html' %}
+<!-- Written by Khanez Wallace -->
+{% extends "base.html" %}
 
-{% block title %}Benefits{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/benefits.css') }}">
+{% endblock %}
 
 {% block content %}
-<h1>Benefits of UWI Compass</h1>
-<p>Why Use UWI Compass?</p>
-<!---Add benefits here-->
+
+<div class="benefits-container">
+    <!-- Intro Section -->
+    <div class="benefits-intro scroll-reveal">
+        <h1 class="benefits-title">Benefits of UWI Compass</h1>
+        <p class="benefits-subtitle">Our system provides the following benefits to its users (students):</p>
+    </div>
+
+    <!--Benefits Grid-->
+    <div class="benefits-grid">
+
+        <!-- Decision Making -->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-code-branch benefit-icon"></i>
+                    <h3>Decision-making</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Helps to facilitate the decision-making process for students (in relation to choosing courses). </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Supplementary Tool -->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-screwdriver-wrench benefit-icon"></i>
+                    <h3>Supplementary Tool</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Acts as a supplementary tool to official academic advising</p>
+                </div>
+            </div>
+        </div>
+
+        <!--- Convenient --->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-clock benefit-icon"></i>
+                    <h3>Convenient</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Provides students with a convenient aid for course planning during the semester at any time they wish to do some course planning.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- High Success -->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-graduation-cap benefit-icon"></i>
+                    <h3>High Success</h3>             
+                </div>
+                <div class="flip-card-back">
+                    <p>Helps to drive the high success of students in their academic journeys by recommending courses that best match students based on their academic history and/or their preferred skills.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foundation -->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-building-columns benefit-icon"></i>
+                    <h3>Foundation</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Aids in creating a foundation for the course planning process for first year students who have no academic history,
+                       by providing them with an idea of how their future semester course selections can possibly be arranged based on their interested skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Insights & Discussions -->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner"> 
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-lightbulb benefit-icon"></i>
+                    <h3>Course Insights & Discussions</h3>        
+                </div>
+                <div class="flip-card-back">
+                     <p>The system helps students find courses of interest by providing descriptions and reviews from past students. It also facilitates discussions among peers through forums regarding these courses.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peer Advice -->
+        <div class="benefit-card scroll-reveal">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <i class="fa-solid fa-users benefit-icon"></i>
+                    <h3>Peer Advice</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>This system provides a platform for students to receive advice from their peers regarding courses they are interested 
+                        in taking via forums.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 {% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/benefits.js') }}"></script>
+{% endblock %}
+
