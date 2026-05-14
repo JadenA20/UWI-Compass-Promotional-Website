@@ -1,0 +1,237 @@
+/* ---- Functionality Container Styling ----- */
+.functionality-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ---- Body Background --- */
+body {
+    background: linear-gradient(
+        to top,
+        #0f6e5a 0%,
+        #178a70 15%,
+        #1bbfae 35%,
+        #a8ddd6 55%,
+        #d4eeeb 70%,
+        #fefefe 100%
+    );
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+/* ---- Intro Section ------ */
+.intro-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgb(8, 105, 65) 0%, rgb(20, 131, 85) 100%);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.intro-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.intro-subtitle {
+    font-size: 1.8rem;
+    opacity: 0.95;
+}
+
+/* ---- Description Section Styling ---- */
+.description-section {
+    margin-bottom: 50px;
+}
+
+.description-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(2px); /* adds blurring effect */
+}
+
+.description-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1a2a2a;
+    margin: 0;
+}
+
+.description-text strong {
+    color: rgb(8, 105, 65);
+}
+
+
+/* ---- Video Section Styling --- */
+.video-section {
+    margin-top: 40px;
+}
+
+.section-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e2e2a;
+    text-align: center;
+    margin: 60px 0 40px;   
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: rgb(8, 105, 65);
+    border-radius: 2px;
+}
+
+
+/* ---- Video Grid Styling ----- */
+.video-grid {
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 10px;
+}
+
+/* ---- Video Card Container ---- */
+.video-card {
+    background-color: transparent;
+    height: 480px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.video-card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: none;              
+    transform: none;               
+    transform-style: flat;        
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ---- Video Card Content ---- */
+.video-card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.98);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* ---- Video Container ---- */
+.tutorial-video {
+    width: 500px;                             
+    aspect-ratio: 16 / 9;
+    margin: 0 auto 20px auto;   
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid rgb(8, 105, 65);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(8, 105, 65);
+}
+
+/* ---- Video Formatting ---- */
+.tutorial-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;          
+    display: block;
+}
+
+
+/* ---- Video Info Styling ---- */
+.video-info {
+    background-color: rgba(8, 105, 65, 0.1);
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    width: 80%;
+    box-shadow: 0 2px 8px rgba(8, 105, 65, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+/* --- Scroll Reveal Animation ---- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {  
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ----- Responsiveness ---- */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 1.8rem;
+    }
+    .intro-subtitle {
+        font-size: 1rem;
+    }
+    .description-text {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .video-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+    .video-card {
+        height: 440px;
+    }
+  
+}
+
+@media (max-width: 480px) {
+    .intro-section {
+        padding: 30px 15px;
+    }
+    .intro-title {
+        font-size: 1.5rem;
+    }
+    .description-card {
+        padding: 20px;
+    }
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .video-card {
+        height: 420px;
+    }
+}
+

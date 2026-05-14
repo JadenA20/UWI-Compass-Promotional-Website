@@ -2,8 +2,103 @@
 
 {% block title %}Functionality{% endblock %}
 
-{% block content %}
-<h1>Functionality of Our System</h1>
-<p>This page highlights the functionality of UWI Compass</p>
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/functionality.css') }}">
+{% endblock %}
 
+{% block content %}
+
+    <!--Intro Section -->
+    <div class="functionality-container">
+        <div class="intro-section scroll-reveal">
+            <h1 class="intro-title">Functionality of Our System</h1>
+            <p class="intro-subtitle">How does UWI Compass Work?</p>
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section scroll-reveal">
+            <div class="description-card">
+                <p class="description-text">
+                    Understandably, there may some questions about how <strong>UWI Compass</strong>
+                    operates. Below are a few tutorial videos to showcase the features of the system,
+                    and hopefully answer those questions.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2 class="section-title scroll-reveal">User Login</h2>
+
+            <div class="video-grid">
+
+                <div class="video-card scroll-reveal">
+        
+                    <div class="video-card-container">
+
+                        <div class="video-card-content">
+
+                            <!-- Tutorial Video and Descriptions -->
+                            <div class="tutorial-video">
+                                <video controls>
+                                    <source src="{{ url_for('static', filename='videos/UWI-Compass-Login.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <div class="video-info">
+                            <p>Students are able to access UWI Compass using their
+                                <i>Student ID</i> and <i>Password.</i> Additionally, the UWI Compass
+                                <i>Terms of Service</i> must be accepted in order to fully complete the login process.
+                                Students will not be asked to accept these terms again once they have done so the first time.
+                            </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Next Video -->
+            <h2 class="section-title scroll-reveal">Video Name</h2>
+            <div class="video-grid">
+
+                <div class="video-card scroll-reveal">
+                    <div class="video-card-container">
+
+                        <!-- Tutorial Video and Descriptions -->
+                        <div class="video-card-content">
+
+                            <!-- Video  -->
+                            <div class="tutorial-video">
+                                <video controls>
+                                    <source src="{{ url_for('static', filename='videos/sample.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <div class="video-info">
+                            <p>Video description will go here!
+                            </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/functionality.js') }}"></script>
 {% endblock %}
