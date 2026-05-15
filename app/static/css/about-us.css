@@ -98,8 +98,9 @@ body {
 
 /* ---- Team Grid Styling ----- */
 .team-grid {
-    display: grid;   
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding: 10px;
 }
@@ -110,6 +111,8 @@ body {
     height: 480px;
     perspective: 1000px;
     cursor: pointer;
+    width: calc(33.333% -20px);
+    min-width: 300px;
 }
 
 .flip-card-inner {
@@ -349,11 +352,10 @@ body {
     .description-card {
         padding: 20px;
     }
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
     .team-card {
+        width: 100%;
         height: 420px;
+        
     }
     .team-image {
         width: 130px;
