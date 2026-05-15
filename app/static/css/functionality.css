@@ -157,6 +157,7 @@ body {
     border: 3px solid rgb(8, 105, 65);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: rgb(8, 105, 65);
+    flex-shrink: 0;
 }
 
 /* ---- Video Formatting ---- */
@@ -177,6 +178,38 @@ body {
     width: 80%;
     box-shadow: 0 2px 8px rgba(8, 105, 65, 0.2);
     transition: all 0.3s ease;
+}
+
+
+
+/* Sub-arrow-list styling */
+.sub-arrow-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem auto 0.5rem;
+    text-align: center; 
+}
+
+.sub-arrow-list li {
+    position: relative;
+    padding-left: 1.2rem; 
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    color: #3a4e48;
+
+    display: block;          
+    width: fit-content;      
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-arrow-list li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(8, 105, 65);
 }
 
 
